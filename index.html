@@ -40,13 +40,13 @@
       });
 
       // SQL query array
-      const parcelLayerSQL = ["Choose a SQL where clause...", "PRENAME = 'British Columbia'",  "PRENAME = 'Yukon'", "PRENAME = 'Northwest Territories'", "PRENAME = 'Nunavut'", "PRENAME = 'Alberta'", "PRENAME = 'Saskatchewan'", "PRENAME = 'Manitoba'", "PRENAME = 'Ontario'", "PRENAME = 'Quebec'", "PRENAME = 'New Brunswick'", "PRENAME = 'Newfoundland and Labrador'", "PRENAME = 'Nova Scotia'", "PRENAME = ' Prince Edward Island'"];
+      const parcelLayerSQL = ["Pick a Province to show on the map", "PRENAME = 'British Columbia'",  "PRENAME = 'Yukon'", "PRENAME = 'Northwest Territories'", "PRENAME = 'Nunavut'", "PRENAME = 'Alberta'", "PRENAME = 'Saskatchewan'", "PRENAME = 'Manitoba'", "PRENAME = 'Ontario'", "PRENAME = 'Quebec'", "PRENAME = 'New Brunswick'", "PRENAME = 'Newfoundland and Labrador'", "PRENAME = 'Nova Scotia'", "PRENAME = ' Prince Edward Island'"];
       let whereClause = parcelLayerSQL[0];
 
       // Add SQL UI
       const select = document.createElement("select","");
       select.setAttribute("class", "esri-widget esri-select");
-      select.setAttribute("style", "width: 200px; font-family: 'Avenir Next'; font-size: 1em");
+      select.setAttribute("style", "width: 300px; font-family: 'Avenir Next'; font-size: 1em");
       parcelLayerSQL.forEach(function(query){
         let option = document.createElement("option");
         option.innerHTML = query;
